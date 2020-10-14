@@ -33,13 +33,29 @@ nav {
 
 /* hovering over nav bar changes colour */
 .navlink:hover {
-	background-color: #575757;
-	color: white;
+	animation-name: navHover;
+	animation-duration: 500ms;
+	animation-fill-mode: forwards;
 }
 
-.beetlelink:hover{
-	background-color: #32a852;
-	color: white;
+@keyframes navHover {
+	100% {
+		color: white;
+		background-color: #575757;
+	}
+}
+
+.beetlelink:hover {
+	animation-name: beetleHover;
+	animation-duration: 500ms;
+	animation-fill-mode: forwards;
+}
+
+@keyframes beetleHover {
+	100% {
+		color: white;
+		background-color: #32a852;
+	}
 }
 
 a {
